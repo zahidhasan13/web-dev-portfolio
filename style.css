@@ -36,13 +36,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
-  background: transparent;
+  padding: 2rem 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   transition: 0.3s;
+  background: var(--bg-color);
 }
 
 .header.sticky {
@@ -85,6 +85,7 @@ body {
   background: url("home-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: 10rem;
 }
 
 .home-content {
@@ -441,6 +442,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
   #menu-icon {
     display: block;
   }
@@ -488,9 +492,8 @@ body {
     flex-direction: column-reverse;
   }
 
-  .about img {
-    width: 70vw;
-    margin-top: 4rem;
+  .about-img {
+    display: none;
   }
 
   .services h2 {
@@ -505,6 +508,12 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home-img img {
+    width: 100%;
+  }
+  .about-img {
+    display: none;
   }
 
   .contact form .input-box input {
